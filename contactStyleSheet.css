@@ -1,0 +1,165 @@
+body{
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
+    background-color: black;
+}
+
+.part1{
+    min-height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, var(--purple), #05010e);
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+
+
+}
+
+.part1Wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftWrapper{
+    width: 46%;
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    margin-left:2%;
+}
+.textWrapper{
+   width: 100%;
+    min-height: 200px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.textWrapper>.text{
+    font-size: 4.5rem;
+    color:white;
+    font-weight: bold;
+    text-align: end;
+    margin-left: 5vw;
+    margin-right: 15px;
+}
+
+.textWrapper>.img{
+    width: 200px;
+    background-image: url("assets/pricing/mail.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 1vw;
+
+}
+
+.mailInfoWrapper{
+    background-color: #F4F2FF;
+    width: 50vw;
+    background-image: linear-gradient(to right, #F4F2FF 60%, #cb93ff);
+    display:flex;
+    flex-direction: column;
+    padding-left:2.5%;
+    margin-left:2.5%;
+}
+
+.mailInfoWrapper > .title{
+    font-size: 4rem;
+    color: black;
+    font-weight: bold;
+    width: 90%;
+    padding-left: 2%;
+    margin-bottom: 2%;
+    margin-top:2%;
+}
+
+.mailInfoWrapper> .list{
+
+
+
+    border-bottom: solid var(--purple) 3px;
+    border-left: solid var(--purple) 3px;
+    width:90%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+}
+
+.mailInfoWrapper> .list > p{
+
+    font-size: 1.3rem;
+    color:#111;
+    margin-bottom: 0.5%;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.mailInfoWrapper> .list > p > span{
+
+    font-size: 1.5rem;
+    color:black;
+    margin-bottom: 0.5%;
+    font-weight: normal;
+    line-height: 50px;
+}
+.mailText{
+    color:transparent;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: white solid 6px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    background-clip: text;
+}
+
+@media (max-width: 1600px) {
+
+
+    .part1Wrapper{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .mailInfoWrapper{
+        position: static;
+        width: 90%;
+    }
+
+    .leftWrapper{
+        width: 90%;
+    }
+
+    .mailInfoWrapper > .list{
+        width: 100%;
+    }
+
+
+    .mailInfoWrapper > .list > p{
+    }
+
+    .textWrapper{
+      flex-direction: column;
+        min-height: 0;
+        margin-top: 20px;
+    }
+
+    .textWrapper>.text{
+        font-size:4rem;
+        text-align: center;
+    }
+
+    .mailText{
+        font-size:2rem;
+    }
+
+
+}

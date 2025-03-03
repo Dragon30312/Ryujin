@@ -1,0 +1,306 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
+    background-color: black;
+}
+.hero{
+    width: 100vw;
+    min-height: 300vh;
+    background-image: linear-gradient(to bottom, var(--purple), black 90%);
+}
+
+.hero > .text{
+    font-size: 28rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 10vw;
+    padding-top: 200px;
+    line-height: 350px;
+    width: 20vw;
+    text-align: center;
+}
+
+
+
+.hero > .text2{
+    font-size: 15rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 25vw;
+    padding-top: 100px;
+    width: 80vw;
+    text-align: center;
+}
+
+.hero > .img{
+    position: fixed;
+    top: -450px;
+    right: 200px;
+    transition: none;
+}
+
+.part2{
+    width: 100vw;
+    min-height: 95vh;
+    background-color: #eee;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.wave {
+    background-color: black;
+    margin-bottom: -4vw;
+    position: relative;
+    z-index: 1;
+
+}
+
+.wave2 {
+    background-color: #eee;
+    margin-bottom: -8vw;
+    margin-top:-4vw;
+    position: relative;
+    z-index: 1;
+
+
+}
+
+
+
+.part2 > h1{
+    font-size: 4rem;
+    color:black;
+    text-align: center;
+    width: 75%;
+}
+
+.part2 > .cardContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+    min-height: 500px;
+    margin-top:30px;
+}
+
+.last2CardsWrapper{
+    display:flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+ .card{
+    width: 400px;
+    height: 500px;
+    background-color: #FFF;
+    border-radius: 25px;
+    border: #AAA 1px solid;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .card > .topRow {
+    width: 80%;
+    height: 40%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 2%;
+    border-bottom: #AAA 1px solid ;
+}
+
+ .card > .topRow > .title {
+    font-size: 3rem;
+    color:black;
+    margin-top: 3%;
+    font-weight: bold;
+    display:flex;
+    gap:1rem;
+
+}
+
+.purpleUnderline{
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+.card > .topRow > .subTitle {
+    font-size: 1.2rem;
+    color: #444;
+    margin-left: 5%;
+    margin-top:2%;
+    height: 10%;
+}
+
+.card > .topRow > .price {
+    margin-top: 10%;
+    font-size: 5rem;
+    color:black;
+    text-shadow: var(--purple) 1px 1px 1px  ;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+.card > .topRow > .price2 {
+    margin-top: 5%;
+    font-size: 2rem;
+    color:black;
+    text-shadow: var(--purple) 1px 1px 1px  ;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+ .card > .topRow > .price2 > span {
+    margin-top: 5%;
+    font-size: 1.3rem;
+    color:black;
+    text-shadow: var(--purple) 0px 0px 0px  ;
+    text-align: center;
+    width: 100%;
+    font-weight: normal;
+}
+
+
+
+.card > .bottomRow {
+    width: 90%;
+    height: 60%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card > .bottomRow > .row{
+    display:flex;
+    margin-top:5%;
+    margin-left: 5%;
+}
+ .card > .bottomRow > .row > .text {
+    font-size: 1.5rem;
+    margin-left: 5px;
+}
+ .card > .bottomRow > .row > .checkmark {
+    background-image: url("assets/pricing/check-mark.png");
+    height: 1.5rem;
+    width: 1.5rem;
+    background-size: contain;
+}
+.card > .bottomRow > .row > .crossmark {
+    background-image: url("assets/pricing/x-mark.png");
+    height: 1.5rem;
+    width: 1.5rem;
+    background-size: contain;
+}
+
+.part3{
+    width: 100%;
+    min-height: 550px;
+    background-color: #222;
+    position: relative;
+    z-index: 2;
+}
+
+.textWrapper{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textWrapper > .text1{
+    font-weight: bold;
+    color:white;
+    font-size: 4rem;
+    margin-right: 35%;
+}
+
+.textWrapper > .text2{
+    font-weight: bold;
+    background-image: linear-gradient(to right, var(--blue), var(--pink));
+    font-size: 6.5rem;
+    margin-left: 10%;
+    background-clip: text;
+    color:transparent;
+    margin-bottom: 25px;
+}
+
+.textWrapper > .button{
+    width: 300px;
+    height: 150px;
+    background-image: linear-gradient(to bottom right, var(--purple), var(--pink));
+    border-radius: 200px;
+    margin-left: 8%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.textWrapper > .button > .img{
+    background-image: url("assets/pricing/mail.png");
+    height: 120px;
+    width: 120px;
+    background-size: contain;
+}
+
+@media (max-width: 1600px) {
+    .part2 > .cardContainer{
+        flex-direction: column;
+    }
+
+    .part2 > h1{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .last2CardsWrapper{
+        flex-direction: column;
+    }
+
+    .textWrapper > .text1{
+        font-weight: bold;
+        color:white;
+        font-size: 3rem;
+        margin-right: 35%;
+    }
+
+    .textWrapper > .text2{
+        font-weight: bold;
+        background-image: linear-gradient(to right, var(--blue), var(--pink));
+        font-size: 5.5rem;
+        margin-left: 10%;
+        background-clip: text;
+        color:transparent;
+        margin-bottom: 25px;
+    }
+
+    .textWrapper > .button{
+        width: 200px;
+        height: 100px;
+        background-image: linear-gradient(to bottom right, var(--purple), var(--pink));
+        border-radius: 150px;
+        margin-left: 8%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px white solid;
+    }
+
+    .hero > .text2{
+        margin-left: 7.5%;
+    }
+}

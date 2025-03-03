@@ -1,0 +1,30 @@
+:root{
+    --purple: #7d00cf;
+    --blue: #3A0CA3;
+    --lightblue: #9460FF;
+    --black: #111;
+    --pink: #F72585;
+
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial;
+
+    z-index: 1;
+}
+
+.show{
+    opacity:1;
+}
+
+.hide{
+    opacity:0;
+}
+
+.hideNav{
+    transform: translateY(-200px);
+}
